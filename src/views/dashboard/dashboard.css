@@ -1,0 +1,7 @@
+.Embed-container {
+  width: auto;
+  height: 90vh;
+}
+#powerbi-embed-container {
+  border: none;
+}
