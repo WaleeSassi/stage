@@ -28,7 +28,7 @@ const AuthLogin = ({ title, subtitle, subtext }) => {
     };
     try {
       await signIn(dataForm.email, dataForm.password);
-      navigate('/dashboard/economy', {
+      navigate('/dashboard/overview', {
         state: {
           toast: true,
         },
@@ -80,38 +80,19 @@ const AuthLogin = ({ title, subtitle, subtext }) => {
           </Box>
         </Stack>
         <Box mt={'25px'}>
-          <Button color="primary" variant="contained" size="large" fullWidth type="submit">
+          <Button
+            style={{
+              backgroundColor: '#004579',
+            }}
+            variant="contained"
+            size="large"
+            fullWidth
+            type="submit"
+          >
             Sign In
           </Button>
         </Box>
       </form>
-      <Typography variant="subtitle1" fontWeight={600} my="5px" textAlign={'center'}>
-        OR
-      </Typography>
-      <Button
-        onClick={async () => {
-          await signInWithGoogle();
-
-          navigate('/dashboard/economy', {
-            state: {
-              toast: true,
-            },
-          });
-        }}
-        color="primary"
-        variant="outlined"
-        size="large"
-        fullWidth
-        type="submit"
-      >
-        Sign In With google
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-          width="5%"
-          style={{ margin: '0 10px' }}
-        />
-      </Button>
-      {subtitle}
     </>
   );
 };

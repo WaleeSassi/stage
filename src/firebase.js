@@ -7,12 +7,12 @@ import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyCYUmXdK9ZLr45aVSmIhxlmIhODAhRLH00',
-  authDomain: 'wdi-dashboard.firebaseapp.com',
-  projectId: 'wdi-dashboard',
-  storageBucket: 'wdi-dashboard.appspot.com',
-  messagingSenderId: '765029758300',
-  appId: '1:765029758300:web:96d60e828c20a1bcd67d99',
+  apiKey: 'AIzaSyDTzwX-jq9YSiYHpzC1pWq0K2JzU18Sn-Q',
+  authDomain: 'stageete-43cda.firebaseapp.com',
+  projectId: 'stageete-43cda',
+  storageBucket: 'stageete-43cda.appspot.com',
+  messagingSenderId: '607779909895',
+  appId: '1:607779909895:web:7f5462eeae44cb9e09d5a2',
 };
 
 // Initialize Firebase

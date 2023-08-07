@@ -16,7 +16,7 @@ const Header = (props) => {
     justifyContent: 'center',
     backdropFilter: 'blur(4px)',
     [theme.breakpoints.up('lg')]: {
-      minHeight: '70px',
+      minHeight: '30px',
     },
   }));
   const ToolbarStyled = styled(Toolbar)(({ theme }) => ({
@@ -38,25 +38,9 @@ const Header = (props) => {
             },
           }}
         >
-          <IconMenu width="20" height="20" />
+          <IconMenu width="10" height="10" />
         </IconButton>
 
-        <IconButton
-          size="large"
-          aria-label="show 11 new notifications"
-          color="inherit"
-          aria-controls="msgs-menu"
-          aria-haspopup="true"
-          sx={{
-            ...(typeof anchorEl2 === 'object' && {
-              color: 'primary.main',
-            }),
-          }}
-        >
-          <Badge variant="dot" color="primary">
-            <IconBellRinging size="21" stroke="1.5" />
-          </Badge>
-        </IconButton>
         <Box flexGrow={1} />
         <Stack spacing={1} direction="row" alignItems="center">
           <Profile />

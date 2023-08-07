@@ -71,7 +71,7 @@ const Profile = () => {
       >
         <MenuItem>
           <ListItemIcon>
-            <IconUser width={20} />
+            <IconUser width={10} />
           </ListItemIcon>
           <ListItemText>{user.displayName}</ListItemText>
         </MenuItem>

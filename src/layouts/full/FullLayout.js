@@ -26,7 +26,9 @@ const FullLayout = () => {
   // const lgUp = useMediaQuery((theme) => theme.breakpoints.up("lg"));
 
   return (
-    <MainWrapper className="mainwrapper">
+    <MainWrapper
+    // className="mainwrapper"
+    >
       {/* ------------------------------------------- */}
       {/* Sidebar */}
       {/* ------------------------------------------- */}
@@ -38,7 +40,9 @@ const FullLayout = () => {
       {/* ------------------------------------------- */}
       {/* Main Wrapper */}
       {/* ------------------------------------------- */}
-      <PageWrapper className="page-wrapper">
+      <PageWrapper
+      // className="page-wrapper"
+      >
         {/* ------------------------------------------- */}
         {/* Header */}
         {/* ------------------------------------------- */}
@@ -50,6 +54,11 @@ const FullLayout = () => {
         {/* PageContent */}
         {/* ------------------------------------------- */}
         <Container
+          style={{
+            paddingLeft: 0,
+            paddingRight: 0,
+            marginLeft: 0,
+          }}
           sx={{
             //  paddingTop: "20px",
             maxWidth: '1400px',
