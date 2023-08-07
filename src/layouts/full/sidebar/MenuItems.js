@@ -43,7 +43,7 @@ const Menuitems = [
   },
   {
     id: uniqueId(),
-    title: 'Predict Income Level',
+    title: 'Predict Economy State',
     icon: IconBuildingBank,
     href: '/dashboard/predict-eco',
   },
